@@ -1,0 +1,23 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+<title>JEŻOZWIERZ</title>
+<!--<meta charset="UTF-8" />-->
+</head>
+
+<body>
+
+<a href="index.html">wróć do index</a>
+
+<script>
+let paragraf = "Zapoznać się z typami danych, funkcjami JavaScript oraz pętlą for. Przy pomocy funkcji wygenerować stronę z 99 paragrafami zawierającymi treść tego zadania, z podaniem numeru paragrafu (z kropką i spacją) na początku paragrafu. Przed paragrafami umieścić przycisk, który kasuje wszystkie te paragrafy. Skrypt strony umieścić w repozytorium strony głównej (publikowanej) pod nazwą 99paragrafow.html. W pliku index.html umieścić link do 99paragrafow.html, i odwrotnie, w pliku 99paragrafow.html umieścić link do index.html.";
+
+for (let nrParagrafu = 1; nrParagrafu <= 99; nrParagrafu++)
+{
+    document.write("<p>" + nrParagrafu + ". " + paragraf + "</p>");
+}
+</script>
+
+</body>
+</html>
