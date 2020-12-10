@@ -1,0 +1,63 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+<title>JEŻOZWIERZ</title>
+<!--<meta charset="UTF-8" />-->
+</head>
+
+<body>
+
+<a href="index.html">wróć do domu!</a>
+<hr />
+
+<script>
+let txt = "sdfkjsfkdgjhdlfjglhkjdflghdkfghlkdjflkghjlfgjh";
+let ileLat = 12;
+let czyMaKarteRowerowa = true;
+
+let tresc = "Była sobie Mia Martia.";
+document.write(tresc);
+document.write("<hr />");
+
+let ksiazka = {
+  tytul: "Przygody dzieci z ulicy Awanturuników",
+  tresc: "Była sobie lotta.",
+  autor: "Astrid Lindgren",
+  liczbaStron: 200,
+  rokWydania: 2017,
+  czyOkladkaTwarda: true,
+
+  czytaj : function() {
+    document.write("<h1>Książka " + this.autor + " pt. " + this.tytul + "</h1>");
+    document.write("<p>" + this.tresc + "</p>");
+  }
+};
+document.write(ksiazka.tresc);
+document.write("<hr />");
+
+ksiazka.czytaj();
+
+let ksiazka2 = {
+  tytul: "Przygody Lotty z ulicy Awanturuników",
+  tresc: "Lotta zjadła lody.",
+  autor: "Astrid Lindgren",
+  liczbaStron: 100,
+  rokWydania: 2017,
+  czyOkladkaTwarda: true,
+
+  czytaj : function() {
+    document.write("<h1>Książka " + this.autor + " pt. " + this.tytul + "</h1>");
+    document.write("<p>" + this.tresc + "</p>");
+  }
+};
+
+document.write("<hr />");
+document.write(document.location.href);
+
+document.write("<hr />");
+document.write("Suma stron wszystkich moich książek: " + (ksiazka.liczbaStron + ksiazka2.liczbaStron))
+</script>
+
+</body>
+</html>
