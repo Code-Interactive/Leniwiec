@@ -8,14 +8,28 @@
 
 <body>
 
-<a href="index.html">wróć do index</a>
+<a href="index.html">wróć do domu!</a>
 
 <script>
+var par = {
+  nr: 1,
+  tresc : "Doe",
+  pisz : function() {
+    document.write("<p>" + this.nr + ": " + this.tresc + "</p>");
+  }
+};
+
+function numerowanyParagraf(nrParagrafu, paragraf)
+{
+    document.write("<p>" + nrParagrafu + ": " + paragraf + "</p>");
+    document.write("<hr />");
+}
+
 let paragraf = "Zapoznać się z typami danych, funkcjami JavaScript oraz pętlą for. Przy pomocy funkcji wygenerować stronę z 99 paragrafami zawierającymi treść tego zadania, z podaniem numeru paragrafu (z kropką i spacją) na początku paragrafu. Przed paragrafami umieścić przycisk, który kasuje wszystkie te paragrafy. Skrypt strony umieścić w repozytorium strony głównej (publikowanej) pod nazwą 99paragrafow.html. W pliku index.html umieścić link do 99paragrafow.html, i odwrotnie, w pliku 99paragrafow.html umieścić link do index.html.";
 
 for (let nrParagrafu = 1; nrParagrafu <= 99; nrParagrafu++)
 {
-    document.write("<p>" + nrParagrafu + ". " + paragraf + "</p>");
+    numerowanyParagraf(nrParagrafu, paragraf);
 }
 </script>
 
