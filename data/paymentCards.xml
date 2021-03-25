@@ -1,0 +1,18 @@
+<paymentCards>
+    <paymentCard>
+        <accountNum>2765864852645865</accountNum>
+        <ccvCode>544</ccvCode>
+    </paymentCard>
+    <paymentCard>
+        <accountNum>274545646774765865</accountNum>
+        <ccvCode>345</ccvCode>
+    </paymentCard>
+    <paymentCard>
+        <accountNum>45674565865</accountNum>
+        <ccvCode>134</ccvCode>
+    </paymentCard>
+    <paymentCard>
+        <accountNum>45687658645865</accountNum>
+        <ccvCode>787</ccvCode>
+    </paymentCard>
+</paymentCards>

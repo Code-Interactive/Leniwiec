@@ -1,0 +1,28 @@
+{
+    "paymentCards": [
+        {
+            "paymentCard": {
+                "accountNum": "2765864852645865",
+                "ccvCode": "544"
+            }
+        },
+        {
+            "paymentCard": {
+                "accountNum": "274545646774765865",
+                "ccvCode": "345"
+            }
+        },
+        {
+            "paymentCard": {
+                "accountNum": "45674565865",
+                "ccvCode": "134"
+            }
+        },
+        {
+            "paymentCard": {
+                "accountNum": "45687658645865",
+                "ccvCode": "787"
+            }
+        }
+    ]
+}

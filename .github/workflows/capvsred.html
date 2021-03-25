@@ -1,0 +1,51 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+<title>Kapitan Ameryka vs Czerwona Czaszka. </title>
+</head>
+
+<body>
+<script>
+let shield = {attack: 10};
+
+let Kapitan = {
+  health: 150,
+  shield: {
+      attack: 20,
+      defence: -12
+  },
+  attack: function() {
+    document.write("<p>Kapitan atakuje tarczą!</p>");
+    return this.shield.attack;
+  }
+};
+
+let Czaszka = {
+  health: 150,
+  gun: {
+      attack: 20,
+      defence: -12
+  },
+  attack: function() {
+    document.write("<p>Czaszka strzela!</p>");
+    return this.gun.attack;
+  }
+};
+
+for(let runda = 1; Kapitan.health > 0 && Czaszka.health > 0; runda++)
+{
+    Kapitan.health = Kapitan.health - Czaszka.attack();
+    // Można to zapisać skrótem: Kapitan.health -= Czaszka.attack();
+    Czaszka.health = Czaszka.health - Kapitan.attack();
+
+    if (runda > 10) break;
+}
+
+document.write("<p>Koniec walki!<p/>");
+document.write("<p>Kapitan ma " + Kapitan.health + " punktow życia a Czaszka " + Czaszka.health + "</p>");
+</script>
+
+</body>    
+
+</html>
